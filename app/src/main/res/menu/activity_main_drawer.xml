@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home" android:icon="@drawable/ic_home_black_48dp"
+            android:title="Home" />
+        <!--item android:id="@+id/nav_favourites" android:icon="@drawable/ic_stars_black_48dp"
+            android:title="Favourite Places" /-->
+        <item android:id="@+id/nav_places" android:icon="@drawable/ic_location_on_black_48dp"
+            android:title="Popular Places" />
+        <!--item android:id="@+id/nav_settings" android:icon="@drawable/ic_settings_black_48dp"
+            android:title="Settings" /-->
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@drawable/ic_share_black_48dp"
+                android:title="Share" />
+            <item android:id="@+id/nav_send" android:icon="@drawable/ic_email_black_48dp"
+                android:title="Contact Us" />
+
+            <item android:id="@+id/nav_blog" android:icon="@drawable/ic_sms_black_48dp"
+                android:title="Blog" />
+            <!--item android:id="@+id/nav_get_listed" android:icon="@drawable/ic_menu_black_48dp"
+                android:title="Own a buisness?Get Listed With Us" /-->
+            <item android:id="@+id/nav_feedback" android:icon="@drawable/ic_feedback_black_48dp"
+                android:title="Send Us Feedback" />
+
+
+        </menu>
+    </item>
+
+</menu>

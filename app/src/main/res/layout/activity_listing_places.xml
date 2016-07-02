@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fadeScrollbars="false"
+    android:scrollbars="vertical"
+    >
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="100"
+            android:background="#FAFAFA"
+                android:id="@+id/linearLayout">
+                <FrameLayout
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/listing_img"
+                    android:layout_width="wrap_content"
+                    android:scaleType="fitStart"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="40"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/linearLayout"
+                    android:layout_alignStart="@+id/linearLayout" />
+
+
+
+
+
+                    <TextView
+                    android:id="@+id/addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:lines="1"
+                    android:text="Not Available"
+                    android:textSize="12sp"
+                    android:textColor="@color/btn_logut_bg"/>
+                    <TextView
+                        android:id="@+id/phone_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|left"
+                        android:lines="1"
+                        android:text="Test Phone no"
+                        android:textSize="12sp"
+                        android:textColor="@color/btn_logut_bg"/>
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:lines="1"
+                        android:text="Test email"
+                        android:textSize="12sp"
+                        android:textColor="@color/btn_logut_bg"/>
+
+</FrameLayout>
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Open Gallery"
+                    android:textColor="#00C3FE"
+                    android:id="@+id/g"
+                    android:layout_gravity="center" />
+
+                <WebView
+
+                    android:id="@+id/web"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    />
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+</RelativeLayout>
+
+</ScrollView>

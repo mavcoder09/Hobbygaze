@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fadeScrollbars="false"
+    android:scrollbars="vertical"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="BaseActivity"
+   >
+    <TextView
+        android:layout_marginTop="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What do you want to do today?"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="135dp"
+
+        >
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="hobbies"
+                android:textStyle="italic"
+                android:id="@+id/keyword"
+                android:inputType="text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center_horizontal"/>
+        </android.support.design.widget.TextInputLayout>
+        <!--LinearLayout
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"-->
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:textStyle="italic"
+                android:id="@+id/location"
+                android:inputType="text"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:drawableRight="@drawable/ic_gps_fixed_black_24dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <!--ImageButton
+            android:layout_marginLeft="0dp"
+            android:layout_weight="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_gps_fixed_black_36dp"/-->
+        <!--/LinearLayout-->
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:id="@+id/search"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Search"
+            android:textColor="@color/textColorPrimary">
+        </Button>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="Explore popular hobbies"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dp">
+
+            <Button
+                android:id="@+id/btnArchery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="Archery"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnBowling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:text="Bowling"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btnDance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:text="Dance"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dp">
+
+            <Button
+                android:id="@+id/btnFitness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="Fitness"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnJustForfun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:text="Just for Fun"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btnMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:text="Music"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="6dp">
+
+            <Button
+                android:id="@+id/btnYoga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="Yoga"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnsports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:text="Sports"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btnlearning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:text="Learning"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>

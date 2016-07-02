@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp">
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--TextView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:text="Get Listed"
+    android:textSize="22sp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:textColor="@color/black"
+    android:background="#d3d3d3"
+    android:textStyle="bold"
+    android:gravity="center"/-->
+
+ <!--LinearLayout android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"-->
+   <!--TextView
+       android:layout_marginLeft="15dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="If you don’t have an account you can create"
+       android:textColor="@color/text_subtitle_light"/-->
+
+
+<!--Button
+    android:layout_width="wrap_content"
+    android:layout_height="34dp"
+    android:layout_marginLeft="5dp"
+    android:text="Sign in"
+    android:background="@drawable/button_shape"
+    android:textColor="@color/textColorPrimary"/-->
+
+ <!--/LinearLayout-->
+
+
+    <!--TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="one below by entering your email address. A password will be automatically emailed to you."
+        android:textColor="@color/text_subtitle_light"/-->
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your email"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="you@yourdomain.com"
+        />
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listing Title"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Complete Address of the Place"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listing Region"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+       android:text="Bangalore"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact email/URL"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter an email address or website URL"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listing category"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinner_prompt"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highlights and Other Facilities"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_subtitle_light"
+        android:inputType="textMultiLine"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pricing"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/text_subtitle_light"
+        android:inputType="textMultiLine"
+        />
+
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provide elaborate pricing details"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number (optional)"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video (optional)"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="A link to a video about your company"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cover Image (optional)"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Choose File"
+            android:textSize="12sp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/textColorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="No File Chosen"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximum file size: 8 MB."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery Images (optional)"
+        android:textColor="@color/black"
+        android:textStyle="bold">
+    </TextView>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="Choose File"
+            android:textSize="12sp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/textColorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="No File Chosen"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maximum file size: 8 MB."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="20dp"
+        android:text="Preview"
+        android:textSize="12sp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/textColorPrimary"/>
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

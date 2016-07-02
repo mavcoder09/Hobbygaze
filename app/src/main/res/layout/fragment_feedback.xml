@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fadeScrollbars="false"
+    android:layout_marginTop="20dp"
+    android:scrollbars="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:background="#FAFAFA">
+
+
+
+
+
+        <!--TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/useremail"
+            android:textSize="20sp"
+            android:textColor="@color/btn_color"
+            android:layout_marginTop="10dp"
+            android:text="To:hello@hobbygaze.com"
+            /-->
+        <!--EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/useremail"
+            android:hint="To"/-->
+
+
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/subject"
+                android:hint="Subject"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/body"
+                android:layout_marginTop="20dp"
+                android:inputType="textMultiLine"
+                android:hint="Message"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:id="@+id/send_email"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:text="Send us Feedback"
+            android:textColor="@color/textColorPrimary">
+        </Button>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

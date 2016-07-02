@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hobbygaze.maverick.hobbygaze">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/favicon"
+        android:label="@string/app_name"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:theme="@style/AppTheme" >
+
+        <!--provider android:name=".fragments.MySuggestionProvider"
+            android:authorities="com.hobbygaze.maverick.hobbygaze.fragments.MySuggestionProvider" /-->
+
+
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Goolge Maps API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyD_Keim85dmf1DUj1FITDh92uxHqEPxqjs" />
+
+        <!-- Add the following meta-data for devices running Google Play service. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/analytics_global_config" />
+
+        <!-- Optionally, register AnalyticsReceiver and AnalyticsService to support background
+             dispatching on non-Google Play devices -->
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <!-- Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable
+             installation campaign reporting -->
+        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+
+
+
+
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <activity
+            android:name=".old.SplashScreen"
+            android:label="@string/app_name"
+            >
+        </activity>
+
+        <activity
+            android:name=".BaseActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTop"
+            >
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.hobbygaze.maverick.hobbygaze.BASEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT"  />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".oldfiles.ListingPlaceActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".oldfiles.GetListed"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="Hobbygaze" android:host="open" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+
+        </activity>
+        <activity
+            android:name=".oldfiles.Browser"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".oldfiles.BlogPostsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+
+        <activity
+            android:name=".oldfiles.AndroidGPSTrackingActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+
+        <activity
+            android:name=".lractivity.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+
+        <activity
+            android:name=".lractivity.RegisterActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+
+
+        <activity
+            android:name=".lractivity.ForgotPassword"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".oldfiles.PopularPlacesActivity"
+            android:label="Popular Places"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".oldfiles.PopularPlacesWebActivity"
+            android:label="Popular Places" >
+        </activity>
+
+        <activity
+            android:name=".oldfiles.GetListedActivity"
+            android:label="Get Listed" >
+        </activity>
+
+
+        <activity
+            android:name=".oldfiles.ShareActivity"
+            android:label="Whatsapp Share" >
+        </activity>
+        <activity
+            android:name=".oldfiles.ContactUsActivity"
+            android:label="Contact US"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".oldfiles.SendFeedbackActivity"
+            android:label="Contact US"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+
+        <activity
+            android:name=".fragments.BlogPostsActivity"
+            android:label="Blog"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+
+        <activity
+            android:name=".fragments.PageListingActivity"
+            android:label="Page Listing"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".SearchResultsActivity"
+            android:label="Search Results"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".fragments.SwipeFragmentActivity"
+            android:label="Search Results"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="010c5f062d19708481033db49c3bbc397822860a"
+            />
+    </application>
+
+</manifest>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Monday"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp"></TextView>
+            <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="11am - 10pm"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp">
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_column="1"
+                android:text="Tuesday"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp"></TextView>
+            <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="11am - 10pm"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp">
+            </TextView>
+        </TableRow>
+        <TableRow    android:layout_marginTop="10dp">
+            <TextView
+                android:layout_column="1"
+                android:text="Wednesday"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp"></TextView>
+            <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="11am - 10pm"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp">
+            </TextView>
+        </TableRow>
+        <TableRow    android:layout_marginTop="10dp">
+            <TextView
+                android:layout_column="1"
+                android:text="Thursday"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp"></TextView>
+            <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="11am - 10pm"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp">
+            </TextView>
+        </TableRow>
+        <TableRow    android:layout_marginTop="10dp">
+            <TextView
+                android:layout_column="1"
+                android:text="Friday"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp"></TextView>
+            <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="11am - 10pm"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp">
+            </TextView>
+        </TableRow>
+        <TableRow    android:layout_marginTop="10dp">
+            <TextView
+                android:layout_column="1"
+                android:text="Saturday"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp"></TextView>
+            <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="11am - 10pm"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp">
+            </TextView>
+        </TableRow>
+        <TableRow    android:layout_marginTop="10dp">
+            <TextView
+                android:layout_column="1"
+                android:text="Sunday"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp"></TextView>
+            <TextView
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:text="11am - 10pm"
+                android:layout_marginLeft="15dp"
+                android:textColor="#333333"
+                android:textSize="14sp">
+            </TextView>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

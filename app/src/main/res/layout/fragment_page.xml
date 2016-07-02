@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_background"
+    tools:context=".fragments.SwipeFragmentActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgview"
+        android:src="@drawable/fvhigh"/-->
+    <!--Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/change_pic"
+        android:text="Change Picture"
+        android:textAllCaps="false"
+        android:textColor="@color/accent"
+        android:src="@drawable/button_shape"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" /-->
+
+</RelativeLayout>

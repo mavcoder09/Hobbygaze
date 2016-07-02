@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have something to say? Get in touch"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/btn_color"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Email:"
+        android:textSize="20sp"
+        android:textColor="@color/btn_color"/>
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btnemail"
+        android:layout_gravity="bottom"
+        android:background="@drawable/emailhobby"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="hello@hobbygaze.com"
+        android:textSize="20sp"
+        android:textColor="@color/btn_color"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Phone:"
+        android:textSize="20sp"
+        android:textColor="@color/btn_color"/>
+        <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+            android:id="@+id/bcal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/mobile"/>
+        <TextView android:layout_width="wrap_content"
+            android:id="@+id/cal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="+919480931554"
+            android:textSize="20sp"
+            android:textColor="@color/btn_color"/>
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>

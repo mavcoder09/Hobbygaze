@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+            <include layout="@layout/view_toolbar" />
+        </android.support.design.widget.AppBarLayout>
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#FFFFFF">
+
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="Yoga Classes in Koramangala"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Music Classes in Malleshwaram"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Fitness Studios in Koramangala"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/b4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Dance Classes in Jayanagar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Bowling Alleys in Marathalli"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+
+                <Button
+                    android:id="@+id/b6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Sports in Whitefield"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+
+                <Button
+                    android:id="@+id/b7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Tennis Courts in Whitefield"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/b8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Bowling Alleys near Bellandur"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/b9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Gyms in Kumaraswamy Layout"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/b10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Yoga in Indiranagar Laser"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/b11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Tagging in Jayanagar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/b12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:text="Amusement Parks in Bangalore"
+                    android:textAllCaps="false"
+                    android:textColor="@color/btn_color"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

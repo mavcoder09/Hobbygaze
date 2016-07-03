@@ -21,6 +21,8 @@
     Sunday 11:00 am – 7:00 pm</string>
     <string name="title_activity_login">Sign in</string>
 
+    <string name="facebook_app_id">913248968781989</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
@@ -33,7 +35,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-
+    <string name="loading">Loading…</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="hint_name">Fullname</string>

@@ -1,7 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
 
 repositories {
+    mavenCentral()
     maven { url 'https://maven.fabric.io/public' }
 }
 
@@ -25,17 +27,20 @@ android {
     }
 }
 
+
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.google.android.gms:play-services:8.3.0'
+    //compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.google.android.gms:play-services:9.0.0'
     compile 'com.android.support:appcompat-v7:23.1.0'
     compile 'com.android.support:design:23.1.0'
     compile 'com.squareup.okhttp:okhttp:2.5.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.google.android.gms:play-services-ads:8.3.0'
-    compile 'com.google.android.gms:play-services-identity:8.3.0'
-    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile 'com.google.android.gms:play-services-ads:9.0.0'
+    compile 'com.google.android.gms:play-services-identity:9.0.0'
+    compile 'com.google.android.gms:play-services-gcm:9.0.0'
     compile 'com.mcxiaoke.volley:library-aar:1.0.0'
     compile 'com.shamanland:xdroid-toaster:0.0.10'
     compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
@@ -46,5 +51,7 @@ dependencies {
     }
     compile 'com.getbase:floatingactionbutton:1.10.1'
     compile 'com.android.support:multidex:1.0.0'
+    //facebookCompile 'com.facebook.android:facebook-android-sdk:4.9.0'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
 }
 
